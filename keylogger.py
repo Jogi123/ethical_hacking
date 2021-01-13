@@ -1,6 +1,5 @@
 #!/bin/python
 
-
 import datetime
 from pynput import keyboard
 
