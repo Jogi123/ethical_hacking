@@ -29,7 +29,7 @@ class ArpSpoofing:
         """
         restore the network to its default structure
         """
-        # tell the gateway the correct location of the target by sending 5 arp packets
+        # tell the gateway the correct location of the target by sending 5 corrrect arp packets
         frame1 = scapy.ARP(op='is-at', hwdst="ff:ff:ff:ff:ff:ff", pdst=self.gateway_ip, hwsrc=self.target_mac,
                            psrc=self.target_ip)
         for i in range(5):
